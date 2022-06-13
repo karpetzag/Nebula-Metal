@@ -93,16 +93,16 @@ fragment float4
 nebulaFragmentShader(RasterizerData in [[stage_in]],
 					 texture2d<float> randomTexture [[ texture(NebulaInputIndexRandomTexture) ]],
 					 texture2d<float> backgroundTexture [[ texture(NebulaInputIndexBackground) ]],
-					 constant NebulaFragmentData *data [[ buffer(NebulaInputIndexData) ]]
+					 constant NebulaFragmentData &data [[ buffer(NebulaInputIndexData) ]]
 			   )
 {
 	sampler textureSampler;
 
 	float4 starsColor = backgroundTexture.sample(textureSampler, in.textureCoordinate);
-	float2 fragCoord = in.position.xy + data->time;
-	float n = nebulaNoise(fragCoord * data->scale + data->offset, randomTexture);
-	n = pow(n + data->density, data->falloff);
-	float4 color = float4(data->color , 1);
+	float2 fragCoord = in.position.xy + data.time;
+	float n = nebulaNoise(fragCoord * data.scale + data.offset, randomTexture);
+	n = pow(n + data.density, data.falloff);
+	float4 color = float4(data.color , 1);
 	return float4(mix(starsColor, color, n));
 }
 
@@ -110,20 +110,20 @@ nebulaFragmentShader(RasterizerData in [[stage_in]],
 fragment float4
 starFragmentShader(RasterizerData in [[stage_in]],
 				   texture2d<float> backgroundTexture [[ texture(0) ]],
-				   constant StarsFragmentData *data [[ buffer(0) ]]
+				   constant StarsFragmentData &data [[ buffer(0) ]]
 				   )
 {
 
 	constexpr sampler textureSampler;
 	float4 sourceColor = backgroundTexture.sample(textureSampler, in.textureCoordinate);
 	float haloFalloffCoef = 0.05;
-	float3 coreColor = data->color;
-	float coreRadius = data->radius;
-	float3 haloColor = data->haloColor;
+	float3 coreColor = data.color;
+	float coreRadius = data.radius;
+	float3 haloColor = data.haloColor;
 	
-	float distanceVal = distance(in.position.xy, data->center);
+	float distanceVal = distance(in.position.xy, data.center);
 	
-	float e = 1.0 - exp(-(distanceVal - coreRadius) * haloFalloffCoef * data->haloFalloff);
+	float e = 1.0 - exp(-(distanceVal - coreRadius) * haloFalloffCoef * data.haloFalloff);
 	float3 result = mix(coreColor, haloColor, e);
 	result = mix(result, float3(0,0,0), e);
 	
