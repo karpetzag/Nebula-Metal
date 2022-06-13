@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F372DA9283BFA42002AE318 /* StarEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372DA8283BFA42002AE318 /* StarEncoder.swift */; };
+		9F372DAB2841428B002AE318 /* NebulaFragmentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372DAA2841428B002AE318 /* NebulaFragmentDataProvider.swift */; };
+		9F372DAD2843B9E3002AE318 /* StarFragmentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372DAC2843B9E3002AE318 /* StarFragmentDataProvider.swift */; };
+		9F82F2A72837D5E900DAFAFB /* NebulaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2A62837D5E900DAFAFB /* NebulaApp.swift */; };
+		9F82F2A92837D5E900DAFAFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2A82837D5E900DAFAFB /* ContentView.swift */; };
+		9F82F2AB2837D5EB00DAFAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F82F2AA2837D5EB00DAFAFB /* Assets.xcassets */; };
+		9F82F2AE2837D5EB00DAFAFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F82F2AD2837D5EB00DAFAFB /* Preview Assets.xcassets */; };
+		9F82F2B52837DD7800DAFAFB /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2B42837DD7800DAFAFB /* Renderer.swift */; };
+		9F82F2B72838A42400DAFAFB /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2B62838A42400DAFAFB /* Shaders.metal */; };
+		9F82F2BE2838D96500DAFAFB /* Vertex+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2BD2838D96500DAFAFB /* Vertex+Extension.swift */; };
+		9F82F2C02838E86700DAFAFB /* PointStarsTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2BF2838E86700DAFAFB /* PointStarsTexture.swift */; };
+		9F82F2C52838F1AE00DAFAFB /* RandomNoiseTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2C42838F1AE00DAFAFB /* RandomNoiseTexture.swift */; };
+		9F82F2C82838FE1F00DAFAFB /* NebulaEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2C72838FE1F00DAFAFB /* NebulaEncoder.swift */; };
+		9F82F2CA2838FE4A00DAFAFB /* PingPongEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2C92838FE4A00DAFAFB /* PingPongEncoder.swift */; };
+		9F82F2CC2838FE8E00DAFAFB /* PingPongTexturePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2CB2838FE8E00DAFAFB /* PingPongTexturePool.swift */; };
+		9F82F2D028392EBF00DAFAFB /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82F2CF28392EBF00DAFAFB /* SettingsViewModel.swift */; };
+		9FA0073628535D1E00668711 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0073528535D1E00668711 /* Device.swift */; };
+		9FA0073828535E1300668711 /* MTLRenderCommandEncoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0073728535E1300668711 /* MTLRenderCommandEncoder+Extension.swift */; };
+		9FA0073A28535E9700668711 /* RendererParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0073928535E9700668711 /* RendererParameters.swift */; };
+		9FA007582855FE0600668711 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA007572855FE0600668711 /* MetalView.swift */; };
+		9FA0075A2855FE3200668711 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA007592855FE3200668711 /* OptionsView.swift */; };
+		9FA0075D2855FF2B00668711 /* NebulaSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0075C2855FF2B00668711 /* NebulaSettingsViewModel.swift */; };
+		9FA0075F2855FF4400668711 /* OtherSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0075E2855FF4400668711 /* OtherSettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F372DA8283BFA42002AE318 /* StarEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarEncoder.swift; sourceTree = "<group>"; };
+		9F372DAA2841428B002AE318 /* NebulaFragmentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaFragmentDataProvider.swift; sourceTree = "<group>"; };
+		9F372DAC2843B9E3002AE318 /* StarFragmentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFragmentDataProvider.swift; sourceTree = "<group>"; };
+		9F82F2A32837D5E900DAFAFB /* Nebula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nebula.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F82F2A62837D5E900DAFAFB /* NebulaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaApp.swift; sourceTree = "<group>"; };
+		9F82F2A82837D5E900DAFAFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F82F2AA2837D5EB00DAFAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F82F2AD2837D5EB00DAFAFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F82F2B42837DD7800DAFAFB /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		9F82F2B62838A42400DAFAFB /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9F82F2B82838BD0C00DAFAFB /* SharedTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedTypes.h; sourceTree = "<group>"; };
+		9F82F2B92838D8D000DAFAFB /* Nebula-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nebula-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F82F2BD2838D96500DAFAFB /* Vertex+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vertex+Extension.swift"; sourceTree = "<group>"; };
+		9F82F2BF2838E86700DAFAFB /* PointStarsTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStarsTexture.swift; sourceTree = "<group>"; };
+		9F82F2C42838F1AE00DAFAFB /* RandomNoiseTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNoiseTexture.swift; sourceTree = "<group>"; };
+		9F82F2C72838FE1F00DAFAFB /* NebulaEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaEncoder.swift; sourceTree = "<group>"; };
+		9F82F2C92838FE4A00DAFAFB /* PingPongEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongEncoder.swift; sourceTree = "<group>"; };
+		9F82F2CB2838FE8E00DAFAFB /* PingPongTexturePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongTexturePool.swift; sourceTree = "<group>"; };
+		9F82F2CF28392EBF00DAFAFB /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		9FA0073528535D1E00668711 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		9FA0073728535E1300668711 /* MTLRenderCommandEncoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLRenderCommandEncoder+Extension.swift"; sourceTree = "<group>"; };
+		9FA0073928535E9700668711 /* RendererParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererParameters.swift; sourceTree = "<group>"; };
+		9FA007572855FE0600668711 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		9FA007592855FE3200668711 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		9FA0075C2855FF2B00668711 /* NebulaSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaSettingsViewModel.swift; sourceTree = "<group>"; };
+		9FA0075E2855FF4400668711 /* OtherSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSettingsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F82F2A02837D5E900DAFAFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F82F29A2837D5E900DAFAFB = {
+			isa = PBXGroup;
+			children = (
+				9F82F2A52837D5E900DAFAFB /* Nebula */,
+				9F82F2A42837D5E900DAFAFB /* Products */,
+				9F82F2B92838D8D000DAFAFB /* Nebula-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		9F82F2A42837D5E900DAFAFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F82F2A32837D5E900DAFAFB /* Nebula.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F82F2A52837D5E900DAFAFB /* Nebula */ = {
+			isa = PBXGroup;
+			children = (
+				9FA0075B2855FE8A00668711 /* ViewModels */,
+				9FA007562855FDF700668711 /* Views */,
+				9F82F2C32838F13800DAFAFB /* Renderer */,
+				9F82F2B82838BD0C00DAFAFB /* SharedTypes.h */,
+				9F82F2A62837D5E900DAFAFB /* NebulaApp.swift */,
+				9F82F2B62838A42400DAFAFB /* Shaders.metal */,
+				9F82F2AA2837D5EB00DAFAFB /* Assets.xcassets */,
+				9F82F2AC2837D5EB00DAFAFB /* Preview Content */,
+			);
+			path = Nebula;
+			sourceTree = "<group>";
+		};
+		9F82F2AC2837D5EB00DAFAFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9F82F2AD2837D5EB00DAFAFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F82F2C32838F13800DAFAFB /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				9F82F2C62838FE0D00DAFAFB /* Encoders */,
+				9F82F2BD2838D96500DAFAFB /* Vertex+Extension.swift */,
+				9F82F2C42838F1AE00DAFAFB /* RandomNoiseTexture.swift */,
+				9F82F2BF2838E86700DAFAFB /* PointStarsTexture.swift */,
+				9F82F2B42837DD7800DAFAFB /* Renderer.swift */,
+				9FA0073528535D1E00668711 /* Device.swift */,
+				9FA0073928535E9700668711 /* RendererParameters.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		9F82F2C62838FE0D00DAFAFB /* Encoders */ = {
+			isa = PBXGroup;
+			children = (
+				9F372DA8283BFA42002AE318 /* StarEncoder.swift */,
+				9F82F2C72838FE1F00DAFAFB /* NebulaEncoder.swift */,
+				9F82F2C92838FE4A00DAFAFB /* PingPongEncoder.swift */,
+				9F82F2CB2838FE8E00DAFAFB /* PingPongTexturePool.swift */,
+				9F372DAA2841428B002AE318 /* NebulaFragmentDataProvider.swift */,
+				9F372DAC2843B9E3002AE318 /* StarFragmentDataProvider.swift */,
+				9FA0073728535E1300668711 /* MTLRenderCommandEncoder+Extension.swift */,
+			);
+			path = Encoders;
+			sourceTree = "<group>";
+		};
+		9FA007562855FDF700668711 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F82F2A82837D5E900DAFAFB /* ContentView.swift */,
+				9FA007572855FE0600668711 /* MetalView.swift */,
+				9FA007592855FE3200668711 /* OptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FA0075B2855FE8A00668711 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9FA0075C2855FF2B00668711 /* NebulaSettingsViewModel.swift */,
+				9F82F2CF28392EBF00DAFAFB /* SettingsViewModel.swift */,
+				9FA0075E2855FF4400668711 /* OtherSettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F82F2A22837D5E900DAFAFB /* Nebula */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F82F2B12837D5EB00DAFAFB /* Build configuration list for PBXNativeTarget "Nebula" */;
+			buildPhases = (
+				9F82F29F2837D5E900DAFAFB /* Sources */,
+				9FA007552855BB6D00668711 /* Lint */,
+				9F82F2A02837D5E900DAFAFB /* Frameworks */,
+				9F82F2A12837D5E900DAFAFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nebula;
+			productName = Nebula;
+			productReference = 9F82F2A32837D5E900DAFAFB /* Nebula.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F82F29B2837D5E900DAFAFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9F82F2A22837D5E900DAFAFB = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 9F82F29E2837D5E900DAFAFB /* Build configuration list for PBXProject "Nebula" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F82F29A2837D5E900DAFAFB;
+			productRefGroup = 9F82F2A42837D5E900DAFAFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F82F2A22837D5E900DAFAFB /* Nebula */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F82F2A12837D5E900DAFAFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F82F2AE2837D5EB00DAFAFB /* Preview Assets.xcassets in Resources */,
+				9F82F2AB2837D5EB00DAFAFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FA007552855BB6D00668711 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F82F29F2837D5E900DAFAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F82F2B72838A42400DAFAFB /* Shaders.metal in Sources */,
+				9F82F2BE2838D96500DAFAFB /* Vertex+Extension.swift in Sources */,
+				9FA0073628535D1E00668711 /* Device.swift in Sources */,
+				9F82F2C52838F1AE00DAFAFB /* RandomNoiseTexture.swift in Sources */,
+				9FA0075D2855FF2B00668711 /* NebulaSettingsViewModel.swift in Sources */,
+				9F82F2A92837D5E900DAFAFB /* ContentView.swift in Sources */,
+				9F82F2D028392EBF00DAFAFB /* SettingsViewModel.swift in Sources */,
+				9FA007582855FE0600668711 /* MetalView.swift in Sources */,
+				9F82F2C02838E86700DAFAFB /* PointStarsTexture.swift in Sources */,
+				9F372DAB2841428B002AE318 /* NebulaFragmentDataProvider.swift in Sources */,
+				9FA0073A28535E9700668711 /* RendererParameters.swift in Sources */,
+				9F372DA9283BFA42002AE318 /* StarEncoder.swift in Sources */,
+				9F82F2C82838FE1F00DAFAFB /* NebulaEncoder.swift in Sources */,
+				9FA0075A2855FE3200668711 /* OptionsView.swift in Sources */,
+				9F82F2B52837DD7800DAFAFB /* Renderer.swift in Sources */,
+				9F372DAD2843B9E3002AE318 /* StarFragmentDataProvider.swift in Sources */,
+				9F82F2CA2838FE4A00DAFAFB /* PingPongEncoder.swift in Sources */,
+				9F82F2CC2838FE8E00DAFAFB /* PingPongTexturePool.swift in Sources */,
+				9FA0073828535E1300668711 /* MTLRenderCommandEncoder+Extension.swift in Sources */,
+				9F82F2A72837D5E900DAFAFB /* NebulaApp.swift in Sources */,
+				9FA0075F2855FF4400668711 /* OtherSettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9F82F2AF2837D5EB00DAFAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F82F2B02837D5EB00DAFAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F82F2B22837D5EB00DAFAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nebula/Preview Content\"";
+				DEVELOPMENT_TEAM = T49N3M8CW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrey.k.Nebula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nebula-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F82F2B32837D5EB00DAFAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nebula/Preview Content\"";
+				DEVELOPMENT_TEAM = T49N3M8CW2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrey.k.Nebula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nebula-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F82F29E2837D5E900DAFAFB /* Build configuration list for PBXProject "Nebula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F82F2AF2837D5EB00DAFAFB /* Debug */,
+				9F82F2B02837D5EB00DAFAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F82F2B12837D5EB00DAFAFB /* Build configuration list for PBXNativeTarget "Nebula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F82F2B22837D5EB00DAFAFB /* Debug */,
+				9F82F2B32837D5EB00DAFAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F82F29B2837D5E900DAFAFB /* Project object */;
+}

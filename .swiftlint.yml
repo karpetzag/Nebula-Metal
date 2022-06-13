@@ -1,0 +1,12 @@
+excluded:
+
+disabled_rules:
+  - identifier_name
+
+analyzer_rules:
+  - explicit_self
+  - unused_declaration
+
+warning_threshold: 1
+
+indentation: tabs
